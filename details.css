@@ -150,6 +150,9 @@ height: 50px;
     width: 400px;
 height: 50px;
 }
+ button{
+    width: 500px;
+     height: 100px;}
  @media (max-width:1000px){
     .item6 img{
         width: 600px;
