@@ -8,7 +8,7 @@
     'sideright1 sideright1 sideright1 sideright1' 
 }
 html{
-    background-color:  rgb(12, 4, 60);
+       background-color: rgb(12, 4, 60);
 }
 a{
     
@@ -53,6 +53,8 @@ a{
 .item5{
     grid-area: sideright1;
     text-align: right;
+    
+
 }
 .item6{
     grid-area: sideright1;
@@ -96,6 +98,8 @@ a{
     margin-top: 5%;
     border-radius: 50%;
     margin-right: 300px;
+    border: solid 15px;
+    border-color: aqua;
 }
 
 a:hover{
@@ -117,12 +121,34 @@ h3{
 p{
     color: azure;
     margin-left: 700px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
 }
 i{
     color: white;
    font-size: 35px;
+}
+label{
+    color: white;
+}
+h2{
+    color: blue;
+}
+#name{
+width: 400px;
+height: 50px;
+}
+#message{
+    width: 500px;
+height: 150px;
+}
+#email{
+    width: 400px;
+height: 50px;
+}
+#subject{
+    width: 400px;
+height: 50px;
 }
  @media (max-width:1000px){
     .item6 img{
@@ -133,18 +159,19 @@ i{
         margin-left: 15%;
     }
     a{
-        font-size: 20px;
+        font-size: 50px;
     }
   .container{
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 100px 300px 200px;
+    grid-template-rows: 100px 300px 200px ;
     background-color: rgb(12, 4, 60);
     grid-template-areas: 'up1 up2 up3 up4 '
     'sideright1 sideright1 sideright1 sideright1'
     'down down down down' 
-} 
+  }
+
 .item5{
     grid-area: down;
     text-align: left;

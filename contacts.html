@@ -2,10 +2,20 @@
 <html>
 <head>
     <title>Mr BhuZel Official</title>
-        <link rel="shortcut icon" href="https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-6/480404235_606722275488186_5254247917023544676_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=AqUbJSQI7tAQ7kNvwGlM80F&_nc_oc=Adk2uGCbrN_bNu6ghvUJ0qkKXTs_4Dtg1bnO-iJihJ64BvkInDmk4P2ahyCGYR5b3_fF-QsQ_5NR4HaovxTzn6Xp&_nc_zt=23&_nc_ht=scontent.fktm19-1.fna&_nc_gid=SerdvLrAD6bi6_FyVOmH1g&oh=00_AfPu0-JN-brq6e-61GeFrY-rUKxOxJltLDJ9m8wkVQOK4A&oe=68545E3A" type="image/x-icon">
+    <link rel="shortcut icon" href="https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-6/480404235_606722275488186_5254247917023544676_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=AqUbJSQI7tAQ7kNvwGlM80F&_nc_oc=Adk2uGCbrN_bNu6ghvUJ0qkKXTs_4Dtg1bnO-iJihJ64BvkInDmk4P2ahyCGYR5b3_fF-QsQ_5NR4HaovxTzn6Xp&_nc_zt=23&_nc_ht=scontent.fktm19-1.fna&_nc_gid=SerdvLrAD6bi6_FyVOmH1g&oh=00_AfPu0-JN-brq6e-61GeFrY-rUKxOxJltLDJ9m8wkVQOK4A&oe=68545E3A" type="image/x-icon">
     <link rel="stylesheet" href="details.css">
    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-   
+  <script src="sendmail.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "tlFgb4z016Q9C47Zz",
+      });
+   })();
+</script>
 </head>
 <body>
      <div class="container">
@@ -16,32 +26,29 @@
          <div class="layout item3">  <a href="service.html">Services</a></div>
           <div class="layout item4">  <a href="contacts.html">Contacts</a>
         </div>
-        
-        <div class="layout item5">
-           <h1>My Social Media</h1>
-           <br>
-           <div class="insta">
-    <i class="bxl bx-instagram bx-flip-vertical" style="color:#d22165;" ></i>
-     <a target="_blank" href="https://www.instagram.com/ur.fav_kush/">ur.fav_kush</a>
-           </div>
-           <div class="fb">
-     <br>
-     <i class="bxl bx-facebook" style="color:#0e23eb;"></i>
-     <a target="_blank" href="https://www.facebook.com/kuxal.vuzel">Kûxāl Vûzēl</a>
-           </div><br>
-           <div class="tiktok">
-            <i class="bxl bx-tiktok" style="color:#e7e8eb;"></i>
-            <a target="_blank" href="https://www.tiktok.com/@kushalbhujel973">kushalbhujel973</a>
-           </div><br>
-           <div class="youtube">
-            <i class="bxl bx-youtube" style="color:#ed0303;"></i> 
-            <a target="_blank" href="https://www.youtube.com/@KuXalBhuZel">Mr BhuZel Official</a>
-           </div>
-        </div>
         <div class="layout item6">
             <img src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/504116694_690342280459518_8031750540415237068_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7MaIlKZ-Dc4Q7kNvwHCpbZe&_nc_oc=AdklgqHgx7J1itmH4q2P84F2N0mzqGIHDTS0O4nV_Tgn1ttgop-CFOSQwGX7FWqHN-Nc69lwlJjdeM8uPLo2heaO&_nc_zt=23&_nc_ht=scontent.fktm10-1.fna&_nc_gid=KQkz7UInwR7xxFk7E603VA&oh=00_AfOJjjNfOQ9r6vi54G7hNBXiWAc6zx4Uece_E3zlIBjE1A&oe=68543C23" alt="Pic">
         </div>
-        
+        <div style="font-size:40px ;" class="layout item5">
+        <h2>Contact Me</h2>
+  <form >
+    <label for="name"> Name</label>
+    <input type="text" id="name" name="name"><br><br>
+<label for="email"> Email</label>
+<input type="email" id="email"><br><br>
+    <label for="subject">Subject</label>
+    <input id="subject" name="subject"></input>
+<br><br>
+<label for="message">Message</label>
+<input type="text" id="message"><br><br>
+  <button style="font-size: 30px; padding-left: 40px; padding-right: 50px; background-color: aqua;" type="button" onclick="sendEmail()">Send</button>
+  </form>
+
+        </div>
+            
     </div>
+   
+
+
 </body>
 </html>
