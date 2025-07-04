@@ -10,6 +10,10 @@
 html{
        background-color: rgb(12, 4, 60);
 }
+.item6 img:hover{
+    height: 450px;
+    opacity: 100%;
+}
 a{
     
     color: white;
